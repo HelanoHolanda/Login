@@ -10,5 +10,5 @@ server.use(cors());
 server.use(router);
 
 server.listen(3333, () => {
-  console.log("server is running!");
+  console.log("server is running!!");
 });

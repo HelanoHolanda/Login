@@ -12,7 +12,7 @@ class CreatUserController {
 
     // Validacao
     if (!name) {
-      return res.json("Digite seu Nome");
+      return res.json("Digite seu Nome!");
     }
 
     // Verificar se o email ja existe
