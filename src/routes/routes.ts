@@ -38,7 +38,7 @@ router.get("/profile", (req, res) => {
   if (!req.isAuthenticated()) {
     return res.redirect("/auth/google");
   }
-  res.json(`Hello ${req.user?.displayName}`);
+  res.json(`Hello ${req.user}`);
 });
 
 //-- Rotas User --
