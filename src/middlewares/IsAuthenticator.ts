@@ -18,6 +18,7 @@ function IsAuthenticator(req: Request, res: Response, next: NextFunction) {
   // Usando o verify
   try {
     const { id } = verify(token, process.env.SECRET_KEY) as JwtPayload;
+    req.user_id = id;
   } catch (error) {
     return res.status(401).json("Usuario nao autorizado!");
   }
