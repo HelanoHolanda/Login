@@ -5,7 +5,7 @@ import cors from "cors";
 import "./auth";
 import passport from "passport";
 import session from "express-session";
-
+require("dotenv").config();
 const server = express();
 
 server.use(
